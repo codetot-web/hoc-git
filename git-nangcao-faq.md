@@ -2,7 +2,7 @@
 
 ## 1. Cách tìm ra commit ID của mỗi commit
 
-Cách tìm ra commit ID của commit bạn muốn revert cũng khá dễ dàng:
+Cách tìm ra commit ID của commit cũng khá dễ dàng:
 
 **Trong phần mềm SourceTree:** click vào một commit, trong khung hình sẽ hiện ra:
 
