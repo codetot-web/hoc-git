@@ -58,3 +58,27 @@ Màn hình sẽ hiện ra xác nhận bằng công cụ soạn thảo, bạn ch�
 Nếu bạn dùng SourceTree, bạn có thể chọn commit cần revert, ấn menu chuột phải chọn 'Revert...' để tiến hành thao tác tương tự.
 
 Cuối cùng, đừng quên `git push` lên nhánh của mình nhé.
+
+## Lùi 1 commit gần nhất
+
+Trong một số tình huống, commit gần nhất của bạn có thể đã thêm nhầm file hoặc chưa thêm đủ file cần thiết. Trường hợp này, ta có thể xử lý như sau:
+
+**Nếu commit chưa được cho lên GitHub**
+
+(Tức là chưa chạy lệnh `git push ...`)
+
+Bạn có thể lùi trực tiếp một commit bằng câu lệnh:
+
+```
+git reset HEAD~1
+```
+
+Sau đó, chạy tiếp `git status` sẽ ra kết quả là hoàn lại trạng thái trước khi commit:
+- Các file đã commit gần nhất đã trở lại trạng thái chưa thêm vào Git (màu đỏ)
+
+Và kiểm tra `git log` (nhật ký nhánh hiện tại) cũng cho kết quả:
+- Commit gần nhất không phải commit bạn vừa lùi
+
+**Nếu commit đã được cho lên GitHub**
+
+Nếu bạn đủ quyền, chạy câu lệnh `git push origin HEAD:<tên nhánh> --force` để ghi đè lên. Áp dụng cho các nhánh phụ hay nhánh của bạn mà thôi.
