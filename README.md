@@ -15,6 +15,8 @@ Code Tốt cung cấp dưới dạng thông tin gợi ý và một số mô ph�
 - [Git cơ bản](git-coban.md)
 - [Câu hỏi thường gặp](git-coban-faq.md)
 
+
 ## Git nâng cao
 
-`Đang cập nhật`
+- [Git nâng cao](git-nangcao.md)
+- [Câu hỏi thường gặp](git-nangcao-faq.md)
